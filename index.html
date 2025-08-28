@@ -2,26 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Test Website</title>
+  <title>Hair Mechanik Workshop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 5px black;
+    }
+    header p {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 3px black;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service-card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Responsive */
+    @media(max-width:768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav {
+        flex-direction: column;
+      }
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
-<body style="margin:0; font-family:Arial, sans-serif; background:#f9f9f9;">
+<body>
 
-  <div style="background:#4CAF50; color:white; padding:20px; text-align:center;">
-    <h1 style="margin:0;">Welcome to My Test Site</h1>
-    <p style="margin:0;">Hosted on GitHub Pages 🚀</p>
-  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <div style="padding:20px; text-align:center;">
-    <h2 style="color:#333;">Hello World!</h2>
-    <p>This is a simple single-page website with inline CSS.</p>
-    <button style="padding:10px 20px; background:#4CAF50; color:white; border:none; border-radius:5px; cursor:pointer;">
-      Click Me
-    </button>
-  </div>
+  <header>
+    <h1>Hair Mechanik Workshop</h1>
+    <p>Your style, our craft ✂️</p>
+  </header>
 
-  <div style="background:#333; color:white; text-align:center; padding:10px; position:fixed; bottom:0; width:100%;">
-    <p style="margin:0;">© 2025 My Test Website</p>
-  </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Hair Mechanik Workshop – where innovation meets tradition. We specialize in precision cuts, modern styles, and premium hair care.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Haircuts</h3>
+        <p>Classic, modern, and custom cuts tailored to your personality.</p>
+      </div>
+      <div class="service-card">
+        <h3>Beard Styling</h3>
+        <p>Sharp trims, detailed shaves, and beard care treatments.</p>
+      </div>
+      <div class="service-card">
+        <h3>Coloring</h3>
+        <p>Creative coloring, highlights, and maintenance services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@hairmechanik.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Visit us at: 123 Main Street, Your City</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hair Mechanik Workshop | Designed for GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
