@@ -4,140 +4,29 @@
   <meta charset="UTF-8">
   <title>Auto Mechanik Workshop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      height: 100vh;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      text-shadow: 2px 2px 5px black;
-    }
-    header p {
-      font-size: 1.2em;
-      text-shadow: 1px 1px 3px black;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.7);
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #FFD700;
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #333;
-    }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .service-card {
-      background: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
-      width: 280px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    /* Responsive */
-    @media(max-width:768px) {
-      header h1 {
-        font-size: 2em;
-      }
-      nav {
-        flex-direction: column;
-      }
-      .services {
-        flex-direction: column;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <header>
+  <header class="hero">
     <h1>Auto Mechanik Workshop</h1>
     <p>Keeping your car on the road 🚗🔧</p>
   </header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to Auto Mechanik Workshop – your trusted partner for professional car repairs and maintenance. Our experienced mechanics are here to keep your vehicle running smoothly and safely.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>Engine Diagnostics</h3>
-        <p>Advanced tools to quickly identify and fix engine issues.</p>
-      </div>
-      <div class="service-card">
-        <h3>Brake Service</h3>
-        <p>Inspection, repair, and replacement of brake systems for safety.</p>
-      </div>
-      <div class="service-card">
-        <h3>Oil & Filter Change</h3>
-        <p>Regular maintenance to keep your engine in top condition.</p>
-      </div>
-      <div class="service-card">
-        <h3>Tire & Wheel Care</h3>
-        <p>Balancing, rotation, and replacement for smooth driving.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@automechanik.com</p>
-    <p>Phone: +123 456 7890</p>
-    <p>Visit us at: 123 Garage Street, Your City</p>
+  <section>
+    <h2>Welcome</h2>
+    <p>We provide reliable and professional car repair services. From engine diagnostics to oil changes — your car is in safe hands.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Auto Mechanik Workshop | Designed for GitHub Pages</p>
+    <p>&copy; 2025 Auto Mechanik Workshop</p>
   </footer>
 
 </body>
